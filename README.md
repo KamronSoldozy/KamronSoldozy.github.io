@@ -1,2 +1,2 @@
 # KamronSoldozy.github.io
-My website dude
+My website in which I describe who I am and more
