@@ -13,10 +13,11 @@ html
   background: -webkit-linear-gradient(#dff4db, #e3e7e3);
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}  
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}  
   
 #menubar
-{ width: 100px;
+{ width: 600px;
   height: 10px;
   text-align: center; 
   margin: 0 auto;
