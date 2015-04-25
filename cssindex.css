@@ -4,9 +4,9 @@ html
 *
 { margin: 0;
   padding: 0;}
-a.one:link {color:#ff0000;}
+a.one:link {color:#FFA319;}
 a.one:visited {color:#00FF00}
-a.one:hover {color:#00FF00;}
+a.one:hover {color:#003300;}
 
 a.two:link {color:#CCFF33;}
 a.two:visited {color:#0000ff;}
