@@ -4,7 +4,25 @@ html
 *
 { margin: 0;
   padding: 0;}
+a.one:link {color:#ff0000;}
+a.one:visited {color:#00FF00}
+a.one:hover {color:#00FF00;}
 
+a.two:link {color:#CCFF33;}
+a.two:visited {color:#0000ff;}
+a.two:hover {color:#CCFF33;}
+
+a.three:link {color:#CCFF33;}
+a.three:visited {color:#0000ff;}
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+a.four:visited {color:#0000ff;}
+a.four:hover {font-family:monospace;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
 #menu_container
 { height: 100px;
   background: #f9f5f6;
