@@ -6,7 +6,7 @@ html
   padding: 0;}
 
 #menu_container
-{ height: 100px;
+{ height: 5px;
   background: #227412;
   background: -moz-linear-gradient(#57B442, #227412);
   background: -o-linear-gradient(#57B442, #227412);
