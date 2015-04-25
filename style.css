@@ -7,7 +7,7 @@ html
 
 body
 { font: normal 80% Arial, Helvetica, sans-serif;
-  background: #ccc url(../images/background.png) repeat;
+  background: #ccc url(background.png) repeat;
   color: #000;
 }
 
@@ -419,7 +419,7 @@ ul img {
  
 #slideshow-caption .slideshow-caption-container {
   padding: 10px 25px 10px 25px; 
-  background: transparent url(../images/transparent.png) repeat;  
+  background: transparent url(transparent.png) repeat;  
   z-index: 1000;}
  
 #slideshow-caption p {
