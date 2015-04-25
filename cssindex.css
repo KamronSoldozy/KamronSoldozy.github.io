@@ -6,7 +6,7 @@ html
   padding: 0;}
 
 #menu_container
-{ height: 5px;
+{ height: 100px;
   background: #227412;
   background: -moz-linear-gradient(#57B442, #227412);
   background: -o-linear-gradient(#57B442, #227412);
@@ -16,8 +16,8 @@ html
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}  
   
 #menubar
-{ width: 500px;
-  height: 50px;
+{ width: 200px;
+  height: 10px;
   text-align: center; 
   margin: 0 auto;
   } 
