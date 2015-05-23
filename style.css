@@ -73,7 +73,13 @@ ol li
 
 #main
 { background: transparent;}
-  
+ 
+ #prlx_lyr_2{
+  position:fixed;
+  background: url(KSLC.png) no-repeat 10px 10px;
+  width:100%;
+  height:200px;
+}
 #header
 { height: 120px;
   background: #144800;
@@ -278,7 +284,7 @@ ul#menu li:hover a
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;} 
- 
+ #content_layer{ position:absolute; }
 #footer
 { width: 940px;
   height: 20px;

@@ -10,6 +10,16 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="image_slide.js"></script>
+  <script>
+  function parallax(){
+  var prlx_lyr_1 = document.getElementById('prlx_lyr_1');
+  var prlx_lyr_2 = document.getElementById('prlx_lyr_2');
+  prlx_lyr_1.style.top = -(window.pageYOffset / 2)+'px';
+  prlx_lyr_2.style.top = (window.pageYOffset/1.3)+'px';
+  prlx_lyr_2.style.bottom=(window.pageYOffset/1.3)+'px';
+}
+window.addEventListener("scroll", parallax, false);
+</script>
 </head>
 
 <body>
@@ -36,6 +46,8 @@
       </div><!--close menubar-->	
 	</div><!--close menu_container-->	
     
+<div id="prlx_lyr_1"></div>
+<div id="prlx_lyr_2"></div>
 	<div id="site_content">		
 
 	  <div class="sidebar_container">       
@@ -83,6 +95,8 @@
 		  <h1>Contact Us</h1> 
 			<p>While average mowing costs are $20-$30, prices may vary. Be sure to contact us using the contact form below for inquiries!</p>
 			</br></br></br>
+
+
 
 <!-- Do not change the code! -->
 <center>
