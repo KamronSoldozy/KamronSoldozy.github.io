@@ -1,0 +1,105 @@
+
+<!DOCTYPE html> 
+<html> 
+<style>
+#counter:hover {
+    background-color: yellow;
+}
+#buton:hover{
+	background-color:pink;
+}
+#colorswap:hover{
+	<
+background-color:black;
+color:white;
+}
+</style>
+<body> 
+Current Time: <font color = "#CD2626"><span id = "counter"> </span></font>
+<br>
+<br>
+
+Sooo record audio doesn't exist yet, I'm on that.  <!-- The counter tag is so i can inner HTML later with the update on the exact time in the mp3 file -->
+Point of this-upload some audio, preferably speech, and... Play with it!
+
+TO MAKE THIS WORK: You must download the zip, and place your mp3 file into it, any name. 
+Preexisting files: <br><li><i>Snowfall.mp3
+</li><li>Feathers.mp3
+</li><li>GuitarvPiano.mp3
+</li><li>Techno.mp3
+</li><li>
+<br><br><br><center>
+<button onclick="recordVid()" type="button" id = "buton">Record Audio (N/a)</button>
+<button onclick="setup()" type="button" id = "buton">Starting Setup (Click me first!)</button>
+<button onclick="playVid()" type="button" id = "buton">Play Audio</button>
+<button onclick="pauseVid()" type="button" id = "buton">Pause Audio</button>
+<button onclick="speedVid()" type="button" id = "buton">Speed Audio</button> 
+<button onclick="jammerVid()" type="button" id = "buton">Audio Jammer</button> </center>
+  
+  
+<br><br>
+<i><b><h4 id="colorswap">If you're up to it... Setup multiple audio files</h4></b></i>
+<script> 
+
+
+
+var a, aud1, aud2, src1, src2;
+function setup(){
+ a = prompt("Music file.mp3")
+aud1  = new Audio();
+src1  = document.createElement("source");
+src1.src  = a;
+aud1.appendChild(src1);
+aud2  = new Audio();
+src2  = document.createElement("source");
+src2.src  = a;
+aud2.appendChild(src2);
+document.getElementById("counter").innerHTML = aud1.currentTime;
+}
+
+//aud1.ontimeupdate = function(){keeptrack()};
+//function keeptrack(){
+
+//	document.getElementById("counter").innerHTML = aud1.currentTime;
+//}
+function speedVid(){
+	var modifier = prompt("How would you like to change it? (0.1-4 is most consistent)")
+aud1.playbackRate= modifier;
+aud2.playbackRate=modifier;
+aud1.play();
+setInterval(track, 200);
+}
+function pauseVid() { 
+  aud1.pause();
+  aud2.pause();
+} 
+function play(){
+	aud2.play();
+}
+function track(){
+	document.getElementById("counter").innerHTML = Math.round(aud1.currentTime*100)/100;
+}
+function playVid(){
+aud1.play();
+setInterval(track, 200);
+
+//aud2.play();
+}
+function jammerVid(){
+	var change = 1000 * prompt("How much of a stutter? (In seconds)");
+aud1.pause();
+aud2.pause();
+aud1.play();
+aud2  = new Audio();
+src2  = document.createElement("source");
+src2.src  = a;
+aud2.appendChild(src2);
+setTimeout(play, change);
+setInterval(track, 200);
+}
+</script> 
+
+
+
+</body> 
+</html>
